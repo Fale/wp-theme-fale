@@ -1,0 +1,103 @@
+/*
+THEME NAME: FabioLocati
+THEME URI: http://www.fabiolocati.com/
+DESCRIPTION: Theme for FabioLocati.Com
+VERSION: 0.0.1
+AUTHOR: Fabio Alessandro Locati
+AUTHOR URI: http://fabiolocati.com
+TAGS: white, microformats, fixed-width, flexible-width, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar
+Template: twentyeleven
+*/
+
+@import url("../twentyeleven/style.css");
+
+/* FIX Font */
+* {
+font-family: 'Ubuntu', sans-serif;
+}
+/*color: #333;*/
+
+/* Fix the HEADER */
+header#branding hgroup {
+	margin: 0 0 0 36.5%; /* Set the margins so the name appears close to the center */
+	height: 178px; /* Set the header to be 178px */
+}
+header#branding {
+	background-image: url(top.png); /* Set the image as background */
+	background-repeat: no-repeat; /* Set the backgroung image not to be repeated */
+	background-position-x: -8px; /*Set the background 8px lefter */
+}
+header#branding form#searchform { visibility:hidden; } /* Hide the Search area */
+header#branding h1#site-title { 
+	margin-right: 100px; /* Obtain the whole name on the same line */
+	text-align: right; /* Align the name from the right side instead of the left */
+}
+header#branding h1#site-title a{ color: #E34234;} /* Colour the Site title in red */
+#access { background: #E34234;} /* Set the navigation bar in red*/
+
+/* Fix flags */
+#branding div.flags {
+	text-align: right;
+	margin-right: 12px;
+	height: 30px;
+}
+
+#branding div.flags img {
+	width: 18px;
+	height: 12px;
+	margin-bottom: 2px;
+	padding-right: 12px;
+}
+
+#branding div.flags a {
+	display: inline;
+	padding: 0px;
+}
+/* Fix the LINKS */
+a { color: #E34234; } /* Set all links in red */
+#content h1 a {	color: #E34234; } /* Set all titles in red */
+a:focus,
+a:hover,
+a:active {
+	color: #E34234 !important; /* Set all links in red */
+	text-decoration: underline !important; /*Set focussed, hover and active links underlined*/
+}
+#menu-main a:focus, /* Hide underline from the main menu */
+#menu-main a:hover,
+#menu-main a:active {
+	text-decoration: none !important;
+}
+
+/* OTHERS */
+#branding {	border-top: none;}
+
+#content p{text-align: justify; }
+#content li{text-align: justify; }
+
+.page .entry-content { width:100%; } /* Wide the page */
+.page .edit-link a { left:-50px !important; } /* Wide the page */
+/*.page { padding: 0 !important; }  Wide the page */
+/*
+#content {
+margin-left: 0px;
+height: 1024px;
+margin-right: 0px;
+}*/
+
+/* Fix right bar on single posts */
+.singular .post-primary { margin: 0 -26.4% 0 0 !important; }
+.singular .post-primary #content, .left-sidebar.singular #content {
+	margin: 0 34% 0 7.6%;
+	position: inherit;
+	width: 58.4%;
+}
+.singular .entry-header, .singular .entry-content, .singular footer.entry-meta, .singular #comments-title { width:100%; }
+
+/* Home Page */
+.page-id-786 .entry-title { display: none; } /* Remove title from Home Page*/
+.page-id-786 .edit-link a { top:20px !important; } /* Remove title from the Home Page */
+.page-id-786 .entry-content { padding: 0 !important; } /* Remove title from Home Page */
+.page-id-816 .entry-title { display: none; } /* Remove title from Home Page*/
+.page-id-816 .edit-link a { top:20px !important; } /* Remove title from the Home Page */
+.page-id-816 .entry-content { padding: 0 !important; } /* Remove title from Home Page */
+
