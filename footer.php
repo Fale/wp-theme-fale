@@ -24,7 +24,14 @@
 
 <div id="site-generator">
 	<?php do_action( 'twentyeleven_credits' ); ?>
-	&copy;2011-<?php echo date("Y"); ?> Fabio Alessandro Locati
+	&copy;2011-<?php echo date("Y"); ?> Fabio Alessandro Locati<br />
+	<?php
+		if(ICL_LANGUAGE_CODE=='en'){
+			echo 'VAT number: IT-08007600961';
+		}elseif(ICL_LANGUAGE_CODE=='it'){
+			echo 'Partita IVA: IT-08007600961';
+		}
+	?>
 </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
